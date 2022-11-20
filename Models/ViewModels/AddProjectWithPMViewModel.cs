@@ -1,0 +1,18 @@
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace TheBugTracker.Models.ViewModels
+{
+    public class AddProjectWithPMViewModel
+    {
+        public Project Project { get; set; }
+        public MultiSelectList PMList { get; set; }
+
+        public string PmId { get; set; }
+        public MultiSelectList PriorityList { get; set; }
+        public int ProjectPriority { get; set; }
+    }
+}
